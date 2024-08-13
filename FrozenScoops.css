@@ -1,0 +1,692 @@
+/* Adding external font file*/
+@font-face {
+    font-family: 'Traveling_Typewriter';
+    src: url('travelingtypewriter/travelingtypewriter.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Adding external file and more to html element */
+html {
+    font-family: 'Traveling_Typewriter', 'sans-serif';
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+/* My custom setting for body element */
+body {
+    margin: 0;
+    padding: 0.5rem;
+}
+
+/* My header styles  */
+header {
+    padding: 0.5rem;
+    background: #83cb61;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.FrozenScoopsBrand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.FrozenScoopsBrand>div:nth-child(1) {
+    width: 6rem;
+    height: 6rem;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.FrozenScoopsBrand>div:nth-child(1) img {
+    width: 100%;
+    height: 100%;
+}
+
+.FrozenScoopsBrand h1 {
+    margin: 0;
+}
+
+.FrozenScoopsTagline {
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-decoration-line: underline;
+    margin-left: 0.5rem;
+    font-family: 'Brush Script MT', cursive;
+}
+
+.FrozenScoopsCart {
+    border: 1px solid black;
+    background-color: white;
+    width: 6rem;
+    height: 6rem;
+    position: relative
+}
+
+/* Adding it to top right corner of FrozenScoops cart img */
+.NotificationBadge {
+    box-sizing: border-box;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #d35658;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: 2px 2px 0 0;
+    right: 0;
+}
+
+.FrozenScoopsCart img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Styling .AboutFS section */
+.AboutFS {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 5px solid black;
+    background-color: #463f3a;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.AboutFS>div:nth-child(1) {
+    margin-bottom: 0.25rem;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 1);
+    overflow: hidden;
+}
+
+.AboutFS>div:nth-child(1):hover {
+    box-shadow: 0px 2px 25px rgba(255, 255, 255, 0.5);
+}
+
+.AboutFS>div>img {
+    width: 100%;
+    height: 100%;
+}
+
+.AboutFS>div:nth-child(2) {
+    padding: 0.25rem;
+    border: 1px solid rgba(255, 255, 255, 1);
+    backdrop-filter: blur(1px);
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+.AboutFS>div:nth-child(2):hover {
+    box-shadow: 0 2px 25px rgba(255, 255, 255, 0.5);
+}
+
+.AboutFS div h2 {
+    text-align: center;
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.AboutFS address h4 {
+    margin: 0;
+    text-align: center;
+}
+
+/* Styling .firstCustomer section element */
+.FirstCustomerFS {
+    padding: 0.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 5px solid black;
+    background-color: #e0e0e0;
+    display: flex;
+}
+
+.FirstCustomerFS>div:nth-child(1) {
+    min-width: 10rem;
+    max-width: 15rem;
+}
+
+.FirstCustomerFS>div:nth-child(1)>img {
+    width: 100%;
+    height: 100%;
+}
+
+.FirstCustomerFS>div:nth-child(2)>div:nth-child(1) {
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.OffersFS div:nth-child(n) {
+    border: 1px solid rgba(0, 0, 255, 0.75);
+    text-align: center;
+}
+
+.FirstCustomerFS>div:nth-child(2)>div:nth-child(2) {
+    padding: 2rem;
+}
+
+.SocialIconFS {
+    display: flex;
+}
+
+/* Adding transition and transformation on social icons */
+.SocialIconFS div {
+    width: 3rem;
+    margin-right: 2.5rem;
+    transition: transform 0.25s linear;
+}
+
+.SocialIconFS div:hover {
+    transform: scale(1.15);
+}
+
+.SocialIconFS img {
+    width: 100%;
+    height: 100%;
+}
+
+.OffersFS {
+    margin: 0;
+    padding: 0.35rem;
+    background-color: #83cb61;
+    display: flex;
+}
+
+.OffersFS>div:nth-child(n) {
+    background-color: white;
+    margin-right: 0.25rem;
+}
+
+.OffersFS a {
+    text-decoration: none;
+    line-height: 0.5rem;
+}
+
+.OffersFS h2 {
+    line-height: 1.25rem;
+}
+
+/* Adding animation to important message DIV>h1 */
+.typewriter h1 {
+    display: inline-block;
+    margin: 1rem 0 0 0;
+    font-size: 1.25rem;
+    overflow: hidden;
+    border-right: .15em solid black;
+    white-space: nowrap;
+    animation:
+        typing 5s steps(60, end) infinite,
+        blink-caret .5s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        max-width: 0%
+    }
+
+    to {
+        max-width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: black
+    }
+}
+
+/* Styling .ConeFS Section */
+.ConesFS {
+    border-bottom: 5px solid black;
+    background-color: #d35658;
+    background-size: cover;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+.ConesFS>h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.ConesFS>h2>span {
+    padding: 0.1rem;
+}
+
+.ConesFS>.ConesCollectionFS {
+    backdrop-filter: blur(4px);
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 0.75rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.ConesCollectionFS>div:nth-child(n) {
+    width: 20rem;
+    margin-right: 1rem;
+    padding-bottom: 0.5rem;
+    border: 0.5px solid rgba(0, 0, 0, 0.25);
+}
+
+.ConesCollectionFS>div:nth-child(n)>img {
+    width: 100%;
+    transition: transform 0.25s linear;
+}
+
+.ConesCollectionFS>div:nth-child(n):hover>img {
+    transform: scale(1.15);
+}
+
+.ConesCollectionFS>div:nth-child(n) div {
+    text-align: center;
+    font-weight: 100;
+}
+
+.ConesCollectionFS>div:nth-child(n) span {
+    font-size: 1.15rem;
+}
+
+/* Styling .SelectScoopsFS horizontalX container */
+.SelectScoopsFS {
+    background-image: url('FrozenScoopsImgs/SelectScoopsBgImg.jpg');
+    background-size: cover;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-bottom: 5px solid black;
+}
+
+.SelectScoopsFS>h2 {
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+    margin-top: 0;
+    padding: 0.25rem;
+    text-align: center;
+}
+
+.SelectScoopsFS>h2>span {
+    background-color: white;
+    padding: 0.1rem;
+}
+
+.ScrollContainer_FS {
+    margin-bottom: 1rem;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: unset;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.ScrollContainer_FS::-webkit-scrollbar {
+    display: none;
+}
+
+.ScrollContent_FS {
+    display: inline-block;
+}
+
+.ScrollContent_FS>div:nth-child(n) {
+    display: inline-block;
+    width: 20rem;
+    height: 20rem;
+    margin-right: 1rem;
+    padding: 0.1rem 0.1rem 0.4rem 0.1rem;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(4px);
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.ScrollContent_FS>div:nth-child(n):hover {
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.5);
+}
+
+.ScrollContent_FS>div:nth-child(n) img {
+    width: 100%;
+    height: 100%;
+    border: 0.1px solid rgba(0, 0, 0, 0.1);
+    transition: transform 0.25s linear;
+}
+
+.ScrollContent_FS>div:nth-child(n)>div:nth-child(1) {
+    width: 100%;
+    height: 85%;
+    box-sizing: border-box;
+    padding: 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.75);
+}
+
+.ScrollContent_FS>div:nth-child(n)>div:nth-child(2) {
+    background-color: #696969;
+    margin: 0;
+    padding: 0.2rem;
+}
+
+.ItemFS {
+    padding-bottom: 0.1rem;
+}
+
+.ItemInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ItemInfo>div:nth-child(1)>div:nth-child(n) {
+    background-color: white;
+    margin-bottom: 0.1rem;
+}
+
+.AmountFS {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.AmountFS>div:nth-child(n) button:nth-child(n) {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 0.1rem 0.35rem 0.1rem 0.35rem;
+}
+
+.AmountFS>div:nth-child(1) {
+    padding: 0.1rem;
+}
+
+.AmountFS>div:nth-child(1) button:nth-child(1):hover {
+    background-color: #89878b;
+    border: 0.5px solid rgba(0, 0, 0, 0.5);
+}
+
+.AmountFS>div:nth-child(1) button:nth-child(3):hover {
+    background-color: #89878b;
+    border: 0.5px solid rgba(0, 0, 0, 0.5);
+}
+
+.AmountFS>div:nth-child(2) {
+    text-align: center;
+}
+
+.AmountFS>div:nth-child(2) button:hover {
+    background-color: #89878b;
+    border: 0.5px solid rgba(0, 0, 0, 0.5);
+}
+
+.ScrollContainerBtn_FS {
+    text-align: center;
+}
+
+.ScrollContainerBtn_FS button {
+    box-sizing: border-box;
+    padding: 0.25rem 3rem 0.25rem 3rem;
+    font-size: 1.25rem;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.ScrollContainerBtn_FS button:hover {
+    background-color: #89878b;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+/* Styling .ViewCartFS section element */
+.ViewCartFS {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: white;
+}
+
+.ViewCartFS>h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.ViewCartFS>div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2fr 0.5fr;
+}
+
+.ViewCartFS>div>div:nth-child(n) {
+    padding: 0.5rem;
+    border: 1px solid black;
+}
+
+.ViewCartFS>div>div:nth-child(n) h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+/* Styling trash */
+.trash {
+    display: flex;
+}
+
+.trash>.LargeTrash {
+    width: 5rem;
+    height: 5rem;
+}
+
+.trash>.SmallTrash {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.trash>svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* Styling Footer container */
+.FooterContentFS>div:nth-child(1) {
+    width: 7.5rem;
+    height: 7.5rem;
+}
+
+.FooterContentFS {
+    border-top: 5px solid black;
+    padding: 1rem;
+    background-color: #83cb61;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.FooterContentFS div {
+    margin-bottom: 0.5rem;
+}
+
+.FooterContentFS>div:nth-child(3) {
+    margin-bottom: 0;
+}
+
+.FooterContentFS h2 {
+    margin: 0.75rem 0 0.5rem 0;
+}
+
+.FooterContentFS>div:nth-child(n+2) {
+    padding: 0.15rem;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.65);
+}
+
+.FooterContentFS>div:nth-child(1) img {
+    width: 100%;
+    height: 100%;
+}
+
+.SocialIconFooterFS {
+    display: flex;
+    justify-content: center;
+}
+
+.SocialIconFooterFS>div:nth-child(n) {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.5rem;
+}
+
+.SocialIconFooterFS>div:nth-child(5) {
+    margin-right: 0;
+}
+
+/* Adding transition and transformation to social icons inside footer container */
+.SocialIconFooterFS>div:nth-child(n) img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.25s linear;
+}
+
+.SocialIconFooterFS>div:nth-child(n) img:hover {
+    transform: scale(1.25);
+}
+
+/* Styling for JS generated elements */
+.green {
+    background-color: #83cb61;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.red {
+    background-color: #d18b8b;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.PushToTotalPurchases {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.75rem;
+    background-color: #83cb61;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.ResetEverything {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.75rem;
+    background-color: #db6c6c;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.TotalPurchaseCard {
+    position: relative;
+    padding: 0.25rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: #e0e0e0;
+}
+
+.CurrentPurchaseCard {
+    display: inline-block;
+    border: 1px dashed rgba(0, 0, 0, 0.5);
+    background-color: white;
+}
+
+.CloseIcon {
+    margin: 0.1rem 0.1rem 0 0;
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.CloseIcon img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Adding media queries for whole document */
+@media only screen and (max-width: 750px) {
+    .FrozenScoopsTagline {
+        display: none;
+    }
+
+    .FrozenScoopsBrand>div:nth-child(1) {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .FrozenScoopsCart {
+        width: 4rem;
+        height: 4rem;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+    .AboutFS>div:nth-child(1) {
+        width: 15rem;
+        height: 15rem;
+    }
+}
+
+@media only screen and (max-width: 536px) {
+    .FirstCustomerFS>div:nth-child(2)>div:nth-child(2) {
+        display: none;
+    }
+
+    .OffersFS {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .OffersFS div:nth-child(n) {
+        padding: 0.25rem;
+    }
+}
+
+
+@media only screen and (max-width: 725px) {
+    .typewriter h1 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .typewriter h1 {
+        display: inline-block;
+        margin: 1rem 0 0 0;
+        font-size: 1rem;
+        overflow: visible;
+        border-right: none;
+        white-space: unset;
+        animation: none;
+    }
+}
+
+
+@media only screen and (max-width: 780px) {
+    .FirstCustomerFS>div:nth-child(1) {
+        display: none;
+    }
+
+    .FirstCustomerFS>div:nth-child(2)>div:nth-child(2) {
+        padding: 0rem;
+    }
+}

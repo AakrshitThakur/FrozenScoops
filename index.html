@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrozeScoops</title>
+    <!-- Icon for my website -->
+    <link rel="icon" href="FrozenScoopsImgs/FrozenScoopsLogo.ico" type="image/ico">
+
+    <!-- My only custom CSS file -->
+    <link rel="stylesheet" href="FrozenScoops.css">
+</head>
+
+<body>
+    <!-- Header for Logo, tagline, cart image -->
+    <header>
+        <div>
+            <div class="FrozenScoopsBrand">
+                <div>
+                    <img src="FrozenScoopsImgs/FrozenScoopsLogo.png" alt="">
+                </div>
+                <div class="FrozenScoopsTagline">Indulge in Every Scoop of Happiness!</div>
+            </div>
+        </div>
+        <div class="FrozenScoopsCart">
+            <a href="#CartScrollHere">
+                <div class="NotificationBadge">0</div>
+                <img src="FrozenScoopsImgs/ShoppingCartFS.jpg" alt="">
+            </a>
+        </div>
+    </header>
+
+    <!-- Website main content -->
+    <main>
+
+        <!-- Section for store location image, address and phone no -->
+        <section class="AboutFS">
+            <div><img src="FrozenScoopsImgs/LocationImageFS.jpg" alt=""></div>
+            <div>
+                <h2>Frozen Scoops</h2>
+                <address>
+                    <span>Frozen Scoops behind xyz petroleum, MG Road, Sector 21, Chandigarh, India</span>
+                    <div>
+                        <h4>Phone No &#x2192; 309129XCG</h4>
+                    </div>
+                </address>
+            </div>
+        </section>
+
+        <!-- Sections to show a random image, offers on first customers and social links -->
+        <section class="FirstCustomerFS">
+            <div>
+                <img src="FrozenScoopsImgs/FirstCustomerImg.jpg" alt="">
+            </div>
+            <div>
+                <div class="OffersFS">
+                    <div>
+                        <h2><a href="#">FREE DELIVERY ON FIRST ORDER!</a></h2>
+                    </div>
+                    <div>
+                        <h2><a href="#">GET 25% OFF ON YOUR FIRST ORDER!</a></h2>
+                    </div>
+                    <div>
+                        <h2><a href="#">GET YOUR ORDER IN JUST WITHIN 2Hours!</a></h2>
+                    </div>
+                </div>
+                <div>
+                    <h2>Connect With us</h2>
+                    <div class="SocialIconFS">
+                        <div>
+                            <a href="https://www.linkedin.com/in/aakrshit-thakur-14433627b/">
+                                <img src="FrozenScoopsImgs/linkedinImg.png" alt="">
+                            </a>
+                        </div>
+                        <div><img src="FrozenScoopsImgs/InstagramImg.png" alt=""></div>
+                        <div><img src="FrozenScoopsImgs/YoutubeImg.png" alt=""></div>
+                        <div><img src="FrozenScoopsImgs/FacebookImg.png" alt=""></div>
+                        <div>
+                            <a href="https://github.com/AakrshitThakur">
+                                <img src="FrozenScoopsImgs/GithubImg.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Showing important message using typewriter animations -->
+        <div class="typewriter">
+            <h1>Select a cone from the following options, then add scoops on top.</h1>
+        </div>
+
+        <!-- Select a cone from the three types -->
+        <section class="ConesFS">
+            <h2><span>Select Your Fresh Cone</span></h2>
+            <div class="ConesCollectionFS">
+
+                <!-- Setting transition and transformation on each cone image -->
+                <div class="Component1_FS"><img src="FrozenScoopsImgs/joy-cone-waffles-cones.png" alt="">
+                    <div>
+                        <div><span>Fresh Waffle-Cones</span></div>
+                        <div><span>Rs 15</span></div>
+                    </div>
+                </div>
+                <div class="Component2_FS"><img src="FrozenScoopsImgs/joy-cone-cake-cones.png" alt="">
+                    <div>
+                        <div><span>Fresh Cake-Cones</span></div>
+                        <div><span>Rs 7</span></div>
+                    </div>
+                </div>
+                <div class="Component3_FS"><img src="FrozenScoopsImgs/joy-cone-sugar-cones-1.png" alt="">
+                    <div>
+                        <div><span>Fresh Sweet-Cones</span></div>
+                        <div><span>Rs 10</span></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Showing important message using typewriter animations -->
+        <div class="typewriter">
+            <h1>Please select up to six scoops to add to your chosen cone type.</h1>
+        </div>
+
+        <!-- Select up-to 6 scoops of any type -->
+        <section id="SelectScoopsFS" class="SelectScoopsFS">
+            <h2><span>Now Add Scoops Inside The Cone</span></h2>
+
+            <!-- A container having horizontal scrolling utilities -->
+            <div class="ScrollContainer_FS">
+
+                <!-- Container containing all the scoops items -->
+                <div class="ScrollContent_FS">
+                    <div class="ItemFS">
+                        <div>
+                            <img src="FrozenScoopsImgs/ChocolateImg.jfif" alt="">
+                        </div>
+                        <div class="ItemInfo">
+                            <div>
+                                <div>Chocolate Scoop</div>
+                                <div>&#x20B9;35 per scoop</div>
+                            </div>
+                            <div class="AmountFS">
+                                <div>
+                                    <button>&#x2212;</button>
+                                    <button>0</button>
+                                    <button>&#x2b;</button>
+                                </div>
+                                <div>
+                                    <button class="AddBtn">ADD</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ItemFS">
+                        <div>
+                            <img src="FrozenScoopsImgs/VanillaImg.jfif" alt="">
+                        </div>
+                        <div class="ItemInfo">
+                            <div>
+                                <div>Vanilla Scoop</div>
+                                <div>&#x20B9;15 per scoop</div>
+                            </div>
+                            <div class="AmountFS">
+                                <div>
+                                    <button>&#x2212;</button>
+                                    <button>0</button>
+                                    <button>&#x2b;</button>
+                                </div>
+                                <div>
+                                    <button class="AddBtn">ADD</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ItemFS">
+                        <div>
+                            <img src="FrozenScoopsImgs/StrawberryImg.jfif" alt="">
+                        </div>
+                        <div class="ItemInfo">
+                            <div>
+                                <div>Strawberry Scoop</div>
+                                <div>&#x20B9;20 per scoop</div>
+                            </div>
+                            <div class="AmountFS">
+                                <div>
+                                    <button>&#x2212;</button>
+                                    <button>0</button>
+                                    <button>&#x2b;</button>
+                                </div>
+                                <div>
+                                    <button class="AddBtn">ADD</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ItemFS">
+                        <div>
+                            <img src="FrozenScoopsImgs/RaspberryImg.jfif" alt="">
+                        </div>
+                        <div class="ItemInfo">
+                            <div>
+                                <div>Raspberry Scoop</div>
+                                <div>&#x20B9;25 per scoop</div>
+                            </div>
+                            <div class="AmountFS">
+                                <div>
+                                    <button>&#x2212;</button>
+                                    <button>0</button>
+                                    <button>&#x2b;</button>
+                                </div>
+                                <div>
+                                    <button class="AddBtn">ADD</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ItemFS">
+                        <div>
+                            <img src="FrozenScoopsImgs/PralinePecanImg.jfif" alt="">
+                        </div>
+                        <div class="ItemInfo">
+                            <div>
+                                <div>Praline Pecans Scoop</div>
+                                <div>&#x20B9;40 per scoop</div>
+                            </div>
+                            <div class="AmountFS">
+                                <div>
+                                    <button>&#x2212;</button>
+                                    <button>0</button>
+                                    <button>&#x2b;</button>
+                                </div>
+                                <div>
+                                    <button class="AddBtn">ADD</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ItemFS">
+                        <div>
+                            <img src="FrozenScoopsImgs/MintImg.jfif" alt="">
+                        </div>
+                        <div class="ItemInfo">
+                            <div>
+                                <div>Mint Scoop</div>
+                                <div>&#x20B9;30 per scoop</div>
+                            </div>
+                            <div class="AmountFS">
+                                <div>
+                                    <button>&#x2212;</button>
+                                    <button>0</button>
+                                    <button>&#x2b;</button>
+                                </div>
+                                <div>
+                                    <button class="AddBtn">ADD</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ItemFS">
+                        <div>
+                            <img src="FrozenScoopsImgs/ButterscotchImg.jfif" alt="">
+                        </div>
+                        <div class="ItemInfo">
+                            <div>
+                                <div>Butterscotch Scoop</div>
+                                <div>&#x20B9;35 per scoop</div>
+                            </div>
+                            <div class="AmountFS">
+                                <div>
+                                    <button>&#x2212;</button>
+                                    <button>0</button>
+                                    <button>&#x2b;</button>
+                                </div>
+                                <div>
+                                    <button class="AddBtn">ADD</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ItemFS">
+                        <div>
+                            <img src="FrozenScoopsImgs/OrangeSorbetImg.jfif" alt="">
+                        </div>
+                        <div class="ItemInfo">
+                            <div>
+                                <div>Orange Sorbet Scoop</div>
+                                <div>&#x20B9;25 per scoop</div>
+                            </div>
+                            <div class="AmountFS">
+                                <div>
+                                    <button>&#x2212;</button>
+                                    <button>0</button>
+                                    <button>&#x2b;</button>
+                                </div>
+                                <div>
+                                    <button class="AddBtn">ADD</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ItemFS">
+                        <div>
+                            <img src="FrozenScoopsImgs/CoconutImg.jfif" alt="">
+                        </div>
+                        <div class="ItemInfo">
+                            <div>
+                                <div>Coconut Scoop</div>
+                                <div>&#x20B9;30 per scoop</div>
+                            </div>
+                            <div class="AmountFS">
+                                <div>
+                                    <button>&#x2212;</button>
+                                    <button>0</button>
+                                    <button>&#x2b;</button>
+                                </div>
+                                <div>
+                                    <button class="AddBtn">ADD</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ItemFS">
+                        <div>
+                            <img src="FrozenScoopsImgs/PinappleSorbetImg.jfif" alt="">
+                        </div>
+                        <div class="ItemInfo">
+                            <div>
+                                <div>Pineapple Sorbet Scoop</div>
+                                <div>&#x20B9;25 per scoop</div>
+                            </div>
+                            <div class="AmountFS">
+                                <div>
+                                    <button>&#x2212;</button>
+                                    <button>0</button>
+                                    <button>&#x2b;</button>
+                                </div>
+                                <div>
+                                    <button class="AddBtn">ADD</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ItemFS">
+                        <div>
+                            <img src="FrozenScoopsImgs/BananaImg.jfif" alt="">
+                        </div>
+                        <div class="ItemInfo">
+                            <div>
+                                <div>Banana Scoop</div>
+                                <div>&#x20B9;20 per scoop</div>
+                            </div>
+                            <div class="AmountFS">
+                                <div>
+                                    <button>&#x2212;</button>
+                                    <button>0</button>
+                                    <button>&#x2b;</button>
+                                </div>
+                                <div>
+                                    <button class="AddBtn">ADD</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right to go on any horizontal direction -->
+            <div class="ScrollContainerBtn_FS">
+                <button>&#x2190;</button>
+                <button>&#x2192;</button>
+            </div>
+        </section>
+
+        <!-- Showing important message using typewriter animations -->
+        <div class="typewriter">
+            <h1>Now Select Any Topping Of Your Choice To Add To Your Selected Scoops.</h1>
+        </div>
+
+        <!-- Section to select topping on the top -->
+        <section class="ConesFS">
+            <h2><span>Select Your Fresh Topping On Top</span></h2>
+            <div class="ConesCollectionFS">
+                <div class="Component1_FS RainbowSprinkles"><img src="FrozenScoopsImgs/RainbowSprinklesTopping.jpg"
+                        alt="">
+                    <div>
+                        <div><span>Fresh Rainbow sprinkles</span></div>
+                        <div><span>Rs 5</span></div>
+                    </div>
+                </div>
+                <div class="Component2_FS MaraschinoCherries"><img src="FrozenScoopsImgs/MaraschinoCherriesTopping.jfif"
+                        alt="">
+                    <div>
+                        <div><span>Fresh Maraschino Cherries</span></div>
+                        <div><span>Rs 25</span></div>
+                    </div>
+                </div>
+                <div class="Component3_FS WhippedCream"><img src="FrozenScoopsImgs/WhippedCreamTopping.jpg" alt="">
+                    <div>
+                        <div id="CartScrollHere"><span>Fresh Whipped Cream</span></div>
+                        <div><span>Rs 10</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section to show the selected combinations of customer icecreams -->
+        <section class="ViewCartFS">
+            <h2 class="CartFS">Add To Cart</h2>
+            <div>
+
+                <!-- Cell to show stacked scoops -->
+                <div>
+                    <h2>Current Purchase</h2><span class="ConeSelectedName"></span>
+                    <div class="CurrentPurchaseStack">
+                        <div class="trash">
+                            <svg class="LargeTrash" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M135.2 17.7C140.6 6.8 151.7 0 163.8 0L284.2 0c12.1 0 23.2 6.8 28.6 17.7L320 32l96 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 96C14.3 96 0 81.7 0 64S14.3 32 32 32l96 0 7.2-14.3zM32 128l384 0 0 320c0 35.3-28.7 64-64 64L96 512c-35.3 0-64-28.7-64-64l0-320zm96 64c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16s16-7.2 16-16l0-224c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16s16-7.2 16-16l0-224c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16s16-7.2 16-16l0-224c0-8.8-7.2-16-16-16z" />
+                            </svg>
+                            Empty
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cell to show total cost of stacked scoops including cone price and topping price -->
+                <div>
+                    <h2>Total Purchases</h2><span class="ConeSelectedName"></span>
+                    <div class="TotalPurchasesStack">
+                        <div class="trash">
+                            <svg class="LargeTrash" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M135.2 17.7C140.6 6.8 151.7 0 163.8 0L284.2 0c12.1 0 23.2 6.8 28.6 17.7L320 32l96 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 96C14.3 96 0 81.7 0 64S14.3 32 32 32l96 0 7.2-14.3zM32 128l384 0 0 320c0 35.3-28.7 64-64 64L96 512c-35.3 0-64-28.7-64-64l0-320zm96 64c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16s16-7.2 16-16l0-224c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16s16-7.2 16-16l0-224c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16s16-7.2 16-16l0-224c0-8.8-7.2-16-16-16z" />
+                            </svg>
+                            Empty
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cell to show total price stacked scoops -->
+                <div>
+                    <h2>Current Price</h2><span class="ConeSelectedName"></span>
+                    <div class="CurrentPrice">
+                        <div class="trash">
+                            <svg class="SmallTrash" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M135.2 17.7C140.6 6.8 151.7 0 163.8 0L284.2 0c12.1 0 23.2 6.8 28.6 17.7L320 32l96 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 96C14.3 96 0 81.7 0 64S14.3 32 32 32l96 0 7.2-14.3zM32 128l384 0 0 320c0 35.3-28.7 64-64 64L96 512c-35.3 0-64-28.7-64-64l0-320zm96 64c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16s16-7.2 16-16l0-224c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16s16-7.2 16-16l0-224c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16s16-7.2 16-16l0-224c0-8.8-7.2-16-16-16z" />
+                            </svg>
+                            Empty
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cell to show total price of all stacked icecreams -->
+                <div>
+                    <h2>Total Price</h2><span class="ConeSelectedName"></span>
+                    <div class="TotalPrice">
+                        <div class="trash">
+                            <svg class="SmallTrash" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M135.2 17.7C140.6 6.8 151.7 0 163.8 0L284.2 0c12.1 0 23.2 6.8 28.6 17.7L320 32l96 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 96C14.3 96 0 81.7 0 64S14.3 32 32 32l96 0 7.2-14.3zM32 128l384 0 0 320c0 35.3-28.7 64-64 64L96 512c-35.3 0-64-28.7-64-64l0-320zm96 64c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16s16-7.2 16-16l0-224c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16s16-7.2 16-16l0-224c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16s16-7.2 16-16l0-224c0-8.8-7.2-16-16-16z" />
+                            </svg>
+                            Empty
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footers for an image, tagline and social links -->
+    <footer>
+        <div class="FooterContentFS">
+            <div><img src="FrozenScoopsImgs/IcecreamFooterImg.png" alt=""></div>
+            <div>Indulge in Every Scoop of Happiness!</div>
+            <div>
+                <h2>Connect With us</h2>
+                <div class="SocialIconFooterFS">
+                    <div>
+                        <a href="https://www.linkedin.com/in/aakrshit-thakur-14433627b/">
+                            <img src="FrozenScoopsImgs/linkedinImg.png" alt="">
+                        </a>
+                    </div>
+                    <div><img src="FrozenScoopsImgs/InstagramImg.png" alt=""></div>
+                    <div><img src="FrozenScoopsImgs/YoutubeImg.png" alt=""></div>
+                    <div><img src="FrozenScoopsImgs/FacebookImg.png" alt=""></div>
+                    <div>
+                        <a href="https://github.com/AakrshitThakur">
+                            <img src="FrozenScoopsImgs/GithubImg.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS file for horizontal scrolling utility -->
+    <script src="FrozenScoopsScrollX_Utility.js"></script>
+
+    <!-- Js file for all the other logics -->
+    <script src="FrozenScoops.js"></script>
+</body>
+
+</html>
